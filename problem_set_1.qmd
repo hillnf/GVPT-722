@@ -28,25 +28,65 @@ Using the table of survey results below answer questions 1a, 1b, 1c, and 1d. Ple
 
 What is the probability of voting for the incumbent? (1 point)
 
+**Answer**:
+
+P = f/n or 550/1165
+
+Probability of people voting for the incumbent is around 47.2 %
+
 ### Part B
 
 What is the probability of being 18-29 or voting for the incumbent? Write the general (i.e. using symbols) formula you used to obtain your answer and show all of your work. (2 points)
+
+**Answer:**
+
+P(A + B) = P(A) + P(B) - P(A and B)
+
+P(A) is voters being aged 18-29
+
+P(B) is voting for the incumbent and are 18-29
+
+460/1165 + 550/1165 - 250/1165 = .6523
+
+So the probability of being 18-29 and voting for the incumbent is around 65.23 %
 
 ### Part C
 
 In terms of the substantive results (ignore statistical significance), does the evidence support your hypothesis? Explain, using details, how you know (no more than 2 sentences). (5 points)
 
+**Answer:**
+
+The evidence does not support the hypothesis as the proportion of people who voted for the incumbent in the 30 to 65 group (150/395 or around 38%) was lower than the proportion of people who voted for the incumbent in the 65 or older group (15/310 or around 48%). So we can conclude that the data does not support the hypothesis presented.
+
 ### Part D
 
-Imagine that the values in the **Total** column for each age group in *Table 1* remained the same, but the percentage voting for the incumbent in each age group was 51% (i.e. 51% of each age group voted for the incumbent). Now imagine that you were going to construct 90% confidence intervals, using the z table, for the percentage voting for the incumbent for each age group (don’t actually do this). List the age groups in order starting with the one that would have the widest confidence interval to the one that would have the narrowest confidence interval, noting any ties. (3 points)
+Imagine that the values in the **Total** column for each age group in *Table 1* remained the same, but the percentage voting for the incumbent in each age group was 51% (i.e. 51% of each age group voted for the incumbent). Now imagine that you were going to construct 90% confidence intervals, using the z table, for the percentage voting for the incumbent for each age group (don't actually do this). List the age groups in order starting with the one that would have the widest confidence interval to the one that would have the narrowest confidence interval, noting any ties. (3 points)
+
+**Answer:**
+
+Because the total remains the wider confidence interval would be those age groups with the smaller sample sizes, therefore:
+
+1.  Older than 65
+
+2.  30 to 65
+
+3.  18 to 29
 
 ## Question 2
 
 Provide a political science example of a nominal variable. (1 point)
 
+**Answer:**
+
+Nominal variables are ones that do not possess an natural order or ranking, for example, gender or political party affiliation would be examples of nominal variables
+
 ## Question 3
 
 What is the OLS estimate of $Y = \beta_0 + \epsilon$? (That is, in terms of $Y$, what does the OLS estimate of $\beta_0$ equal?) (2 points)
+
+**Answer:**
+
+Since there is no independent variable Beta 0 would be equal to the sample mean of Y or i.e Beta 0 = Y
 
 ## Question 4
 
@@ -72,22 +112,48 @@ $N = 1,200$ from a random sample of 18 and older Canadians.
 
 Calculate the t-statistic for `Education`. (1 point)
 
+**Answer:**
+
+Coefficent/Standard of Error = t- statistic
+
+-2/.2 = -10
+
 ### Part B
 
 Interpret the results for the `Education` variable, i.e. BRIEFLY discuss the substantive meaning of the results (1 sentence), substantive significance (no more than 2 sentences), and statistical significance (1 sentence). (5 points)
+
+**Answer:**
+
+The negative coefficient of the education variable suggests that as the level of education increases then the dependent variable of George Bush's thermometer score decrease. This could give the implication that as education levels increase among Canadians 18 or older the popularity of approval of President Bush degrees, that is providing everything else is held constant. The t-statistic of -10 and a P value of 0.0 shows that the effect of education is significant at the 5% level.
 
 ### Part C
 
 In this context, is the coefficient on the constant term useful on its own? Why or why not (1 sentence) (5 points)
 
+**Answer:**
+
+No, the coefficient on the constant term is not typically useful on it own as it represents the expected value of the dependent variable when all the independent variables are held constant, which in the real world is not likely to occur.
+
 ### Part D
 
 Is the coefficient on `U.S. TV access` statistically significant at the 5% error level? (1 point)
+
+**Answer:**
+
+The coefficient for the U.S. TV access variable is statistically significant at the 5% error level because its p-value is 0.0126 which is less than 0.05.
 
 ### Part E
 
 Is the coefficient on `U.S. TV access` statistically significant at the 1% error level? (1 point)
 
+**Answer:**
+
+The coefficient for the U.S. TV access variable is not statistically significant at the 1% error level because its p-value is 0.0126 which is greater than 0.01.
+
 ### Part F
 
 Based on the results in *Table 2*, might the negative coefficient on `U.S. TV Access` be the result of more educated people being more likely to have access to U.S. TV? In no more than 1 sentence, explain your answer. (3 points)
+
+**Answer:**
+
+As the two variables are accounted for separately in the regression model we can not assume that the negative coefficient during the US TV access is attributed to the education level.

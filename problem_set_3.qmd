@@ -1,0 +1,77 @@
+---
+title: "Problem set 3"
+author: "INSERT YOUR NAME"
+format: 
+  html:
+    self-contained: true
+editor: visual
+execute: 
+  warning: false
+  message: false
+---
+
+In this assignment you will use U.S. Census data from the Current Population Survey Voter Supplement Files from 1972-2000 (excluding 1976) aggregated to the state level.  The data file is on the course ELMS site and is named `aggcpsgvpt722.dta`. Please create a script file that shows your work and answer the questions below using the following information. Include the script file with your responses. Unless otherwise noted, you do not need to include tables or graphs of the results.
+
+*Your script needs to run without errors. Please make sure to render it and look at the output before submitting it.*
+
+**Dependent Variable**
+
+-   `vote`: defined as the turnout rate in a state in a given year (i.e. number who voted divided by the number eligible to vote).
+
+**Independent Variables**
+
+-   `south`: a dummy variable equal to 1 for states from the confederacy and 0 otherwise.
+
+-   `pcthsg`: percentage of the population in a state that graduated high school (i.e. % that graduated high school only, as well as those who have more education).
+
+*Be sure to look at the distributions of each of the variables. (On your own, but we should see that you did this in your code).*
+
+```{r}
+
+
+
+
+
+```
+
+## Question 1
+
+Using descriptive statistics only, what is the mean turnout rate in southern states? (1 point)
+
+## Question 2
+
+Using descriptive statistics only, what is the mean turnout rate in non-southern states? (1 point)
+
+## Question 3
+
+Is the difference in mean turnout in southern vs. non-southern states **substantively significant**? That is, is the difference consequential to politics? Explain. Please confine your answer to no more than 2 sentences. (4 points)
+
+## Question 4
+
+Using a difference of means test, is the difference statistically significant at $p<0.05$? (1 point)
+
+## Question 5
+
+Run a regression with `vote` as the dependent variable and `south` as the independent variable. Is it meaningful to interpret the constant term on its own? If so, what information does it provide? Answer in one sentence. (2 points)
+
+## Question 6
+
+Using the regression you just ran, in no more than one sentence interpret the **substantive meaning** of the coefficient on the `south` variable. (2 points)
+
+## Question 7
+
+True or False. The results from the questions above indicate that the difference of means approach and the regression allow one to draw an identical set of conclusions? (1 point)
+
+## Question 8
+
+Run a regression with `vote` as the dependent variable and `south` and `pcthsg` as the independent variables. [Report the results in a professionally formatted table.]{.underline} Is it meaningful to interpret the constant term on its own? If so, what information does it provide? Answer in one sentence. (2 points)
+
+## Question 9
+
+Compared to the regression you ran in *Question 5*, what happened to the coefficient on the `south` variable and why? Answer in no more than 2 sentences. (2 points)
+
+*Hint: take a look at the relationship between `south` and `pcthsg` (consider whether the `pcthsg` differs in the `south` vs. the `non-south`).*
+
+## Question 10
+
+Reflecting on all of the analyses you have run, is south, in the regression from *Question 5* exogenous? Why or why not? Answer in no more than one sentence. (1 point)

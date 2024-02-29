@@ -26,21 +26,41 @@ Imagine you hypothesize that the probability of voting for the incumbent in a tw
 
 What is the probability of voting for the incumbent? (1 point)
 
+**Answer:**
+
+Incumbent/Total = Probability of voting for incumbent, therefore 200/1000 = .20; so the probability of voting for the incumbent is predicted to be 20%.
+
 ### Part B
 
 What is the probability of being 18-29 **or** voting for the incumbent? Write the general (i.e. using symbols) formula you used to obtain your answer and show all of your work. (2 points)
+
+**Answer:**
+
+P(A or B) = P(A) + P(B), therefore 400/1000 + 200/1000 = .6; so the probability of being 18-29 or having voted for the incumbent would predicted to be 60%.
 
 ### Part C
 
 In terms of the substantive results (ignore statistical significance), does the evidence support your hypothesis? Explain, using details, how you know (no more than 2 sentences). (5 points)
 
+**Answer:**
+
+The results does not support the hypothesis because while the same number voted for the incumbent in both ages groups, the total number of 18-29 votes (400) is less than the total number of 30 or older voters (600). This meaning that a greater proportion of people aged 18-29 voted for the incumbent than those aged 30 or older, therefore showing less support for the proposed hypothesis.
+
 ## Question 2
 
 A recent poll of 500 likely Republican voters includes 200 "highly educated" respondents and 300 "poorly educated" respondents. Both groups supported Donald Trump at the same rate. If you were to construct confidence intervals around these estimates, would the confidence interval be larger around the highly educated or poorly educated? Why? Answer in no more than one sentence. (2 points)
 
+**Answer:**
+
+The smaller the sample size the larger the confidence interval, so the "highly educated" would be larger given they have a smaller sample.
+
 ## Question 3
 
 Provide a political science example of a continuous variable. (1 point)
+
+**Answer:**
+
+The Gross Domestic Product (GDP) of a given country
 
 ## Question 4
 
@@ -70,21 +90,41 @@ The OLS regression results in **Table 2** were obtained from a survey of 1,500 c
 
 In the context described above, is it useful to interpret the coefficient on the constant term on its own? If it is not useful to do so explain why it is not. If it is useful to do so explain what it reveals. Answer in no more than 2 sentences. (3 points)
 
+**Answer:**
+
+The constant on its own is not a particularly useful in itself as it is unlikely that we would have zero for both variables in the real world. Out of the 1,500 European citizens surveyed it would be unusual to find no women or people with 0 years of education.
+
 ### Part B
 
 Is the result for education statistically significant at the 5% error level? Answer **YES** or **NO** (1 point)
+
+**Answer:**
+
+No
 
 ### Part C
 
 Will a 95% confidence interval around the coefficient for education include 0? Answer **YES** or **NO** (1 point)
 
+**Answer:**
+
+Yes
+
 ### Part D
 
 What is the substantive meaning of the coefficient on the education variable (i.e. interpret the coefficient estimate)? Answer in one sentence. (3 points)
 
+**Answer:**
+
+For every increase in education of those survey on average the thermometer score will increase by 20 all else held constant.
+
 ### Part F
 
 Based on the results in **Table 2**, might the negative coefficient on `Female` be the result of females having less access to education? In no more than 1 sentence, explain your answer. (3 points)
+
+**Answer:**
+
+Since the variables are accounted for separately in this regression test we cannot make the claim that education has an effect on the thermometer ratings of those female's surveyed.
 
 ## Extra credit
 
@@ -108,4 +148,4 @@ C.  Zuri would be marked as correct, and the others as incorrect
 
 D.  Zuri and Jesse would both be marked correct, and Teddy as incorrect
 
-E.  Zuri and Teddy would both be marked correct, and Jesse as incorrect
+E.  **Zuri and Teddy would both be marked correct, and Jesse as incorrect**

@@ -1,6 +1,6 @@
 ---
 title: "Problem set 2"
-author: "INSERT YOUR NAME"
+author: "Nat Hill"
 format: 
   html:
     self-contained: true
@@ -27,6 +27,10 @@ Imagine you hypothesize that the probability of voting for the incumbent in a tw
 
 What is the probability of voting for the incumbent? (1 point)
 
+::: callout-note
+1/1
+:::
+
 **Answer:**
 
 P = f/n or 550/1165
@@ -36,6 +40,10 @@ Probability of people voting for the incumbent is around 47.2 %
 ### Part B
 
 What is the probability of being older than 65 **or** voting for the incumbent? Write the general (i.e. using symbols) formula you used to obtain your answer and show all of your work. (2 points)
+
+::: callout-note
+2/2
+:::
 
 **Answer:**
 
@@ -53,6 +61,10 @@ So the probability of being 65 or older and voting for the incumbent is around 6
 
 In terms of the substantive results (ignore statistical significance), does the evidence support your hypothesis? Explain, using details, how you know and consider whether, in terms of direction, the results fully support the hypothesis, partially support it, or do not support it at all (no more than 2 sentences). (5 points)
 
+::: callout-note
+5/5
+:::
+
 **Answer:**
 
 In substantive terms, the result shown partially supports the proposed hypothesis at all as the proportion of those who voted for the incumbent is higher for those at the youngest and oldest age ranges but the middle range has a far lower proportion of votes for the incumbent . As the proportion of those aged 18 to 29 and 30 to 65 and voted for the incumbent is 54.3% (250/460) and 37.9 (150/395) respectively and 48.38% 150/310 for those aged 30 to 65 showing only partial support for the hypothesis.
@@ -60,6 +72,10 @@ In substantive terms, the result shown partially supports the proposed hypothesi
 ### Part D
 
 Imagine that the values in the **Total** column for each age group in Table 1 remained the same, but the percentage voting for the incumbent in each age group was 38% (i.e. 38% of each age group voted for the incumbent). Now imagine that you were going to construct 90% confidence intervals, using the z table, for the percentage voting for the incumbent for each age group (don't actually do this).  List the age groups in order starting with the one that would have the widest confidence interval to the one that would have the narrowest confidence interval, noting any ties. (3 points)
+
+::: callout-note
+3/3
+:::
 
 **Answer:**
 
@@ -75,6 +91,10 @@ Because the total remains the wider confidence interval would be those age group
 
 Provide a political science example of an ordered variable that is not listed on the slides. (1 point)
 
+::: callout-note
+1/1
+:::
+
 **Answer:**
 
 The Political Stability Index is an example of an ordinal variable as it ranks a countries political stability in the order categories of "very stable", "stable", "neutral", "unstable", and "very unstable".
@@ -82,6 +102,10 @@ The Political Stability Index is an example of an ordinal variable as it ranks a
 ## Question 3
 
 Provide a political science example of a continuous variable that is not listed on the slides. (1 point)
+
+::: callout-note
+1/1
+:::
 
 **Answer:**
 
@@ -108,19 +132,39 @@ N = 1,200 from a random sample of Canadians who are 18 years or older.
 
 Interpret the results for the `U.S. TV Access` variable by **BRIEFLY** discussing the substantive meaning of the results (1 sentence) and statistical significance (1 sentence). (4 points)
 
+::: callout-note
+2/4
+:::
+
 **Answer:** This effect is statistically significant as the p-value is less than the common threshold of 0.05, indicating a strong evidence against the null hypothesis that this coefficient is zero. While it would appear The substantive meaning of these results are while there appears to be a significant difference between those Canadians sampled who had access to US TV vs those who hadn't and their opinion on George W. Bush it doesn't necessarily establish a direct casual relationship as their might be other unmeasured factors at play.
+
+::: callout-note
+The substantive meaning is that Canadians who have access to US TV have, on average, 15 points lower feelings towards GWB than Canadians who do not have access to US TV.
+:::
 
 **Part B**
 
 In this context, is the coefficient on the constant term useful on its own? Why or why not (1 sentence)? (5 points)
 
+::: callout-note
+4/5
+:::
+
 **Answer:**
 
 Yes the coefficient is valuable in this context, as the realistic probability of the IV being 0 should be taken into account the, as the constant term can provide a baseline level of the dependent variable and gives us a starting point for interpretation if we were to decide to add additional variables into our analysis.
 
+::: callout-note
+More simply: it provides the average expected feeling towards GWB held by Canadians with access to US TV.
+:::
+
 ### Part C
 
 From the information provided, can you determine the mean thermometer rating for George W. Bush for 18 and older Canadians with U.S. TV Access and for those without U.S. TV Access? If you can determine those values, what are they, respectively? (3 points)
+
+::: callout-note
+3/3
+:::
 
 **Answer:**
 
@@ -130,9 +174,17 @@ Yes we can determine the mean ratings with the information provided. For those w
 
 Based on the results in Table 2, might the negative coefficient on `U.S. TV Access` be the result of younger people being more likely to have access to U.S. TV? In no more than 1 sentence, explain your answer. (3 points)
 
+::: callout-note
+2/3
+:::
+
 **Answer:**
 
 With out any information on the specific ages ranges of those sampled were are unable to conclude that younger people are more likely to have any more access, categorizing the data based on age would help us provide a clearer answer to the question.
+
+::: callout-note
+Is it plausible that age influences an individual's feelings towards GWB?
+:::
 
 ## Question 5
 
@@ -150,17 +202,35 @@ Use the same background information as in Q4, but now imagine you got the result
 
 Interpret the results for the `U.S. TV Access` variable by **BRIEFLY** discussing the substantive meaning of the results (1 sentence) and statistical significance (1 sentence). (4 points)
 
+::: callout-note
+3/4
+:::
+
 **Answer:**
 
 With a T statistic of -1.75 (-7/4) and a p value of .0804 we can infer that US TV Access variable is not significant at a statistical level however, the negative coefficient of the variable is associated with a decrease in the DV showing a potential adverse affect on tv access and George Bush's thermometer ratings.
+
+::: callout-note
+Be careful not to imply causation here.
+
+Also, ... on average and holding age constant.
+:::
 
 ### Part B
 
 In this context, is the coefficient on the constant term useful on its own? Why or why not (1 sentence)? (5 points)
 
+::: callout-note
+4/5
+:::
+
 **Answer:**
 
 No, the coefficient on the constant term is not typically useful on it own as it represents the expected value of the dependent variable when all the independent variables are held constant, which in the real world is not likely to occur.
+
+::: callout-note
+Which variable is responsible for this?
+:::
 
 ## Question 6
 
@@ -172,6 +242,10 @@ Link to article: <https://journals-sagepub-com.proxy-um.researchport.umd.edu/doi
 
 Provide the full citation of the article (hint: you can use one of the ready-made options on Google Scholar). (1 point)
 
+::: callout-note
+1/1
+:::
+
 **Answer:**
 
 Uzonyi, G., Kim, N. K., Jahanbani, N., & Asal, V. (2021). Genocide, Politicide, and the Prospects of Democratization since 1900. Journal of Conflict Resolution, 65(9), 1521-1550. https://doi-org.proxy um.researchport.umd.edu/10.1177/00220027211000445
@@ -180,23 +254,39 @@ Uzonyi, G., Kim, N. K., Jahanbani, N., & Asal, V. (2021). Genocide, Politicide, 
 
 State the hypothesis of interest (if there are several, just pick one) and the method used to evaluate it (e.g., crosstab, OLS, probit etc.). (2 points, if you list more than one hypothesis additional points will be taken off)
 
+::: callout-note
+2/2
+:::
+
 **Answer:**
 
 **Hypothesis**: Genocide and politicide decrease the likelihood of democratization.
 
 **Method:** OLS
 
+::: callout-note
+It's a linear probability model (which is an OLS model). Cool find!
+:::
+
 ### Part C
 
 Report the **substantive** result in no more than two sentences (i.e., the interpretation of the main coefficient, or the effect value/size, do not mention statistical significance). (3 points)
+
+::: callout-note
+3/3
+:::
 
 **Answer:**
 
 The substantive results of the paper show that countries who have experience acts of genocide or politicide in their history suggests a negative association with a state ability to democratize and establish political and social inclusion in both the short and long term. Furthermore, the paper suggests that appearance of genocide in a countries past does not have the same affect on democratization as the presence of civil war in a countries past history.
 
-Part D
+### Part D
 
 Does the article provide any discussion of substantive significance? **To ensure that no points are deducted a good faith effort is needed. That is, as long as there is evidence of an answer that shows engagement with this (including discussion with another member of the class) you won't lose points. Engagement plus successful answers can gain up to 5 points.**
+
+::: callout-note
+0/5
+:::
 
 **If yes**, provide a quote of what they say and then - in no more than two sentences - evaluate the logic the author(s) used. Note that it is most likely that you will NOT find an article that actually does this and if they do so, they likely do so poorly -- i.e. they most likely just assert something but do not provide the logic; in those cases you should say they do not do well. Leave this section blank if they do not discuss substantive significance and answer under the "If no" section. Run your answer by at least one other person from class and adjust as needed. List the person(s) you spoke to.
 
@@ -206,7 +296,15 @@ Does the article provide any discussion of substantive significance? **To ensure
 
 The authors findings that acts of genocide and politicide are more likely to have an impact on a country's ability to democratize is an interesting question to test statistically, yet I do think the authors use of case and narrative analysis, provided in their "illustrative examples" section, detracts a lot from the statistical tests they conduct. This leads to the debate if a more theoretical or case narrative style approach would be better to answer this question they ask than an OLS regression.
 
+::: callout-note
+Interesting, but not relevant to this question.
+:::
+
 Furthermore, their exclusion of acts of mass violence committed by rebel or non- government actors when coding the genocide/politicide variables I believe seriously affects the significance of the results as it rather narrows instances of genocide to those just committed by government forces and I feel if they included such events there would be significantly different results. However I do feel this article contributes to our developing understanding of the long-term effects of violence and how it affects post - conflict societies.
+
+::: callout-note
+You needed to provide an assessment of the substantive significance of their findings.
+:::
 
 **List of People:**
 

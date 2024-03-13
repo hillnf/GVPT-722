@@ -64,6 +64,10 @@ ggplot(data, aes(x=pcthsg)) +
 
 Using descriptive statistics only, what is the mean turnout rate in southern states? (1 point)
 
+::: callout-note
+1/1
+:::
+
 **Answer:**
 
 ```{r}
@@ -92,6 +96,10 @@ print(mean_turnout_rate)
 
 Using descriptive statistics only, what is the mean turnout rate in non-southern states? (1 point)
 
+::: callout-note
+1/1
+:::
+
 ```{r}
 
 mean_vote_non_south <- mean(data$vote[data$south == 0], na.rm = TRUE)
@@ -107,13 +115,25 @@ cat("Mean turnout rate in non-southern states:", mean_vote_non_south, "\n")
 
 Is the difference in mean turnout in southern vs. non-southern states **substantively significant**? That is, is the difference consequential to politics? Explain. Please confine your answer to no more than 2 sentences. (4 points)
 
+::: callout-note
+3/4
+:::
+
 **Answer:**
 
 Overall, the 8% increase in voter turnout could be seen as relatively insignificant as a voter turnout is generally already very low and such different might not have a drastic impact on an election. However, if the election at hand is highly contested and very narrow that 8% turnout could be the make or break figure for a particular candidate.
 
+::: callout-note
+You need to make a call: significant or not. Then provide reasoning behind that call.
+:::
+
 ## Question 4
 
 Using a difference of means test, is the difference statistically significant at $p<0.05$? (1 point)
+
+::: callout-note
+1/1
+:::
 
 ```{r}
 
@@ -135,6 +155,10 @@ Yes, the difference of means test showed The p-value of the test is less than 2.
 
 Run a regression with `vote` as the dependent variable and `south` as the independent variable. Is it meaningful to interpret the constant term on its own? If so, what information does it provide? Answer in one sentence. (2 points)
 
+::: callout-note
+1/2
+:::
+
 ```{r}
 
 regression_model <- lm(vote ~ south, data=data)
@@ -148,9 +172,17 @@ summary(regression_model)
 
 The intercept (68.1809) on its own tell us the voter turn out rate of states outside of the south.
 
+::: callout-note
+The **average** voter turn out rate of states outside of the south.
+:::
+
 ## Question 6
 
 Using the regression you just ran, in no more than one sentence interpret the **substantive meaning** of the coefficient on the `south` variable. (2 points)
+
+::: callout-note
+2/2
+:::
 
 **Answer:**
 
@@ -160,6 +192,10 @@ The substantive meaning of the south coefficient means that on average a state l
 
 True or False. The results from the questions above indicate that the difference of means approach and the regression allow one to draw an identical set of conclusions? (1 point)
 
+::: callout-note
+0/1
+:::
+
 **Answer:**
 
 False, regression can only provide insights on relationships between variables but does not allow one to draw an identical set of conclusions.
@@ -167,6 +203,10 @@ False, regression can only provide insights on relationships between variables b
 ## Question 8
 
 Run a regression with `vote` as the dependent variable and `south` and `pcthsg` as the independent variables. [Report the results in a professionally formatted table.]{.underline} Is it meaningful to interpret the constant term on its own? If so, what information does it provide? Answer in one sentence. (2 points)
+
+::: callout-note
+0/2
+:::
 
 ```{r}
 
@@ -185,9 +225,17 @@ stargazer(regression_model, type = "text", covariate.labels = c("Southern States
 
 Yes, the constant term provides useful information in that it provides use an average voter turnout for all states when all other terms are held constant that we can compare to the affects of "graduated high school" and "south" IVs that we are using in this regression.
 
+::: callout-note
+No, it indicates the predicted turn out rate among non-Southern states with a high school graduation rate of zero (which is impossible).
+:::
+
 ## Question 9
 
 Compared to the regression you ran in *Question 5*, what happened to the coefficient on the `south` variable and why? Answer in no more than 2 sentences. (2 points)
+
+::: callout-note
+2/2
+:::
 
 *Hint: take a look at the relationship between `south` and `pcthsg` (consider whether the `pcthsg` differs in the `south` vs. the `non-south`).*
 
@@ -209,6 +257,10 @@ The coefficient decreased from -7.1134 to -6.003. The change can be attributed t
 ## Question 10
 
 Reflecting on all of the analyses you have run, is south, in the regression from *Question 5* exogenous? Why or why not? Answer in no more than one sentence. (1 point)
+
+::: callout-note
+1/1
+:::
 
 **Answer:**
 

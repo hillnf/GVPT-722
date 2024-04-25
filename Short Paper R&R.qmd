@@ -1,0 +1,53 @@
+---
+title: "Short Paper 1 R & R"
+format: html
+editor: visual
+---
+
+## Short Paper 1 R & R
+
+Nat Hill
+
+\-\--
+
+-   *"The tables are highly problematic. Each one needs a number and descriptive label and they need to be professionally formatted - they look like raw output, which is not appropriate for a paper submitted for anything other than casual comments to a colleague and even then it is best to format professionally. Also, the code should not be included with the tables."*
+
+    -   I revised the bivariate and multivariate regression tables to a respectable and professional format using the modelsummary package. Please find the graphs below:
+
+![](images/Screen Shot 2024-04-25 at 12.51.38 PM-01.png){fig-align="center" width="337"}
+
+![](images/Screen Shot 2024-04-25 at 12.53.36 PM.png){fig-align="center" width="258"}
+
+![![](images/Screen Shot 2024-04-25 at 1.41.28 PM.png){width="313"}](images/Screen Shot 2024-04-25 at 1.40.07 PM.png){fig-align="center" width="337"}
+
+![](images/Screen Shot 2024-04-25 at 1.43.01 PM.png){fig-align="center" width="283"}
+
+-   *"For bivariate models you are not holding anything else constant. It isn't clear if you are going from bivariate to multiple regression. In terms of organization it is best to work through all the bivariates to build the case and then do the regression."*
+
+    -   I have removed the phrase "holding all else" constant from my analysis of the bivariate regression and organize my paper to more clearly separate my analysis of bivariate and multivariate regressions.
+
+-   In response to the comment *"this sentence is confusing"*, I have made the following revisions
+
+    -   However, while these results indicate a strong statistical significance this does not necessarily indicate a direct causal relationship between the amount of high school graduation in a state and the amount of voter turnout.
+
+-   I fixed the typo from "date of regression" to "date of registration"
+
+-    I have made the correction that "we can expect the voter tunout to decrease by approximately .267" to "we can expect the voter turnout to increase by .267 as the date of election day registration gets further away."
+
+-   I changed the word "imply" to "infer"
+
+-   I will make sure to note any issues of global causality in the revision.
+
+-   *"Please don\'t use coded variable names in your write up (for example pcthsg)."*
+
+    -   I have changed all the coded variable names to their relevant names including pcthsg to "Percentage of High School Graduates"
+
+-   *"You also have the scatter plots and box plot and should generally start with them and then do the bivariate OLS."*
+
+    -    I have added discussion about the scatter and box plot ( in the future I wont use a box plot in published work) noting how the graphs reflect the findings of each bivariate regression.
+
+-   *"You need to discuss sub sig for all the vars. Also, where is the robust SE footnote?"*
+
+    -   In the revision I address the substantive significance for all variables in the publish work showing how the south and close variables (eg. how voter turnout is affected in southern states vs non-southern states) are impacted by their inclusion in the multivariate regression.
+
+    -   I moved my footnote about robust standard of errors (which was in the original submission on the bottom of the first page) to the bottom of the page to be more visible.

@@ -1,0 +1,147 @@
+---
+title: "Short Paper #2"
+subtitle: "Nat Hill"
+format: pdf
+editor: visual
+
+output:
+  pdf_document:
+    latex_engine: pdflatex
+    fig_caption: true
+    fig_crop: false
+    number_sections: true
+    toc: true
+    toc_depth: 1
+    toc_float:
+      collapsed: false
+    keep_tex: true
+    template: null
+header-includes:
+  - \usepackage{float}
+  - \usepackage{graphicx}
+  - \usepackage{caption}
+  - \usepackage{booktabs}
+  - \usepackage{geometry}
+    \geometry{
+    letterpaper,
+    left=1in,
+    right=1in,
+    top=0.5in,
+    bottom=0.5in
+    }
+  - \setlength{\parskip}{0.5em}
+  - \setlength{\parindent}{0em}
+  - \renewcommand{\baselinestretch}{1.5}
+mainfont: Times New Roman
+fontsize: 12pt
+geometry: margin=1in
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+\vspace{-2.5cm}
+
+### Analysis
+
+After reviewing the suggestions from the intial review I have ran new model that seeks to address the following: 1) that the effects of high school graduation rates and whether a state is southern or not are conditional on one another, 2) I expect that the negative effect of the south becomes less strong as high school graduation rates increase (i.e. the effect of the south is less strongly negative at higher levels of high school graduation rates).
+
+As shown on Graph 1 and Graph 2 in the appendix, in both southern and non-southern states there is on average and without controlling for any of the other variables, a positive relationship between the high school graduation rate and the expected voter turnout. However, the effect of high school graduation on voter turnout is far more profound in southern states as indicated by the steeper slope in Graph 1. This effect could be a result of the generally higher percentage of high school graduates in non-southern states as opposed the south, as well as the larger amount of spread in the southern states data.
+
+The evidence from our extended model broadly supports our hypothesis that education levels modify the relationship between geographic location (i.e located in the south vs. not being in the south) and voter turnout. In practical terms, this means that education levels might mitigate the negative influence of southern location on voter participation. As seen in Table 1, the 0.2344 positive value of the interaction action term coefficient provides support for hypothesis as it is statistically significant at the 0.01 level.
+
+However in substantive terms, provided we hold all else constant, we can expect for every 1% increase in high school graduation rate the negative impact of being in the south on voter turnout weakens, on average, by 0.234 percentage points. The impact of being in the south shows that as education levels rise, the adverse effects of being in a located in the south becomes less pronounced in terms of voter turnout. While the increase of .234 % turnout might not be a large margin the grand scheme of US voter participation levels, it does provide a insight in how policy makers can increase voter participation through education and in a close election matter.
+
+In our new model, we can see the that the .015 coefficient for the percentage of high school graduates is not significant. In other words, the percentage of high school graduates is not a statistically significant in predicting voter turnout. Furthermore, we can confidently indicate the negative impact of being in the South on voter turnout is mitigated by higher high school graduation rates.
+
+However, as indicated by Graph 3, the interaction effect between the South (coded as 1) and high school graduation rate is evident. In the South, an increase in the percentage of high school graduates is associated with a more substantial increase in voter turnout compared to areas not in the South. Overall, both regions show a positive relationship between high school graduation rate and voter turnout. We can conversely argue that while high school graduation rate has less an impact on the voter turnout in the non-south is not as a substantively significant as in the south. Lastly, we find that with a coefficient of -22.204, the effect of being on the south in relation to voter turn is statistically significant at the 0.001 level providing further support to my argument.
+
+Based on the new results, I argue that it would be in the best interest of this paper to include the findings from our extended model as the inclusion of the interaction term provides valuable insights in how education levels modify the impact of southern state location on voter participation and it enriches our the larger discussion around regional variations in voter turn. The inclusion of the model could provide election campaigns and policy makers value insights into how voter turnout is influence by educational attainment. We do have to consider the robustness of these findings by testing across different specifications and address any omitted variables going forward.
+
+### $Appendix$
+
+```{r,echo = FALSE}
+
+library(haven)  
+library(ggplot2) 
+library(stargazer)
+data <- read_dta("aggcpsgvpt722.dta")
+
+```
+
+```{r,echo = FALSE}
+
+library(ggplot2)
+library(modelsummary)
+library(ggplot2)
+library(haven) 
+
+df <- read_dta("aggcpsgvpt722.dta")
+
+df_south <- df[df$south == 1,]
+df_nonsouth <- df[df$south == 0,]
+
+p1 <- ggplot(df_south, aes(x=pcthsg, y=vote)) +
+  geom_point() +
+  geom_smooth(method=lm, se=FALSE, color="red") +
+  labs(title=" Graph 1 - South: High School Graduation Rates vs Voter Turnout",
+       x="High School Graduation Rate",
+       y="Voter Turnout")
+
+p2 <- ggplot(df_nonsouth, aes(x=pcthsg, y=vote)) +
+  geom_point() +
+  geom_smooth(method=lm, se=FALSE, color="blue") +
+  labs(title="Graph 2 - Non-South: High School Graduation Rates vs Voter Turnout",
+       x="High School Graduation Rate",
+       y="Voter Turnout")
+
+print(p1)
+print(p2)
+
+
+
+
+```
+
+```{r,echo = FALSE}
+library(broom)
+library(haven)
+library(marginaleffects)
+library(modelsummary)
+
+df <- read_dta("aggcpsgvpt722.dta")
+
+extended_model <- lm(vote ~ close + pcthsg + south + pcthsg:south, data = df)
+
+modelsummary(extended_model,
+             title = "Table 1: Extended Model (w/Interaction Term)",
+             coef_rename = c(south = "Southern States",
+                             pcthsg = "% of HS Graduates",
+                             close = "Voter Registration Closing Date",
+                             "pcthsg:south" = "% of HS Graduates - Southern States"),
+             estimate = "{estimate}{stars}")
+
+
+
+
+
+
+```
+
+```{r,echo = FALSE}
+
+library(interactions)
+
+interaction.plot <- interact_plot(extended_model, pred = "pcthsg", modx = "south", interval = TRUE)
+
+interaction.plot <- interaction.plot + ggtitle("Graph 3: Interaction Effect of South and High School Graduation Rate on Voter Turnout")
+
+interaction.plot <- interaction.plot + xlab("Percentage of High School Graduates") + ylab("Voter Turnout")
+
+
+print(interaction.plot)
+
+
+
+```
